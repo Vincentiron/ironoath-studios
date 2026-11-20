@@ -241,6 +241,7 @@
     .reel-frame:nth-child(1) { animation-delay: 0.05s; }
     .reel-frame:nth-child(2) { animation-delay: 0.15s; }
     .reel-frame:nth-child(3) { animation-delay: 0.25s; }
+    .reel-frame:nth-child(4) { animation-delay: 0.35s; }
 
     .reel-fallback {
       position: absolute;
@@ -423,7 +424,7 @@
     }
 
     @media (min-width: 540px) {
-      .reels { gap: 1rem; grid-template-columns: repeat(3, 1fr); }
+      .reels { gap: 1rem; grid-template-columns: repeat(2, 1fr); }
       h1 { max-width: 14ch; }
     }
   </style>
@@ -484,6 +485,16 @@
             </div>
             <video src="reel3.mp4" poster="berserker-gta-poster.jpg" playsinline controls preload="metadata" title="Berserker Co – Game Trailer"></video>
           </div>
+          <div class="reel-frame">
+            <div class="reel-fallback" aria-hidden="true">
+              <span class="play">
+                <svg width="10" height="12" viewBox="0 0 10 12" fill="currentColor" aria-hidden="true"><path d="M0 0v12l10-6z"/></svg>
+              </span>
+              <span class="reel-label">Reel 4</span>
+              <span class="reel-ratio">9:16</span>
+            </div>
+            <video src="reel4.mp4" poster="berserker-gta-30s-poster.jpg" playsinline controls preload="metadata" title="Berserker Co – 30s Story Ad"></video>
+          </div>
         </div>
       </section>
 
@@ -522,7 +533,7 @@
     <p class="name">Iron Oath Studios</p>
     <p>All your advertising &amp; website needs</p>
     <p>Your local Rocky business · Rockhampton, QLD</p>
-    <p style="margin-top:0.6rem;font-size:0.75rem;opacity:0.65;">Reel 3 music: “Magenta Metropolis” by <a href="https://www.escp.space" target="_blank" rel="noopener" style="color:inherit;">| e s c p |</a> (<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener" style="color:inherit;">CC BY 4.0</a>)</p>
+    <p style="margin-top:0.6rem;font-size:0.75rem;opacity:0.65;">Reels 3 &amp; 4 music: “Magenta Metropolis” by <a href="https://www.escp.space" target="_blank" rel="noopener" style="color:inherit;">| e s c p |</a> (<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener" style="color:inherit;">CC BY 4.0</a>)</p>
   </footer>
 
   <script>
