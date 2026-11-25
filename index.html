@@ -242,6 +242,14 @@
     .reel-frame:nth-child(2) { animation-delay: 0.15s; }
     .reel-frame:nth-child(3) { animation-delay: 0.25s; }
     .reel-frame:nth-child(4) { animation-delay: 0.35s; }
+    .reel-frame:nth-child(5) { animation-delay: 0.45s; }
+
+    /* Centre a leftover odd reel in the 2-column grid (e.g. reel 5). */
+    .reel-frame:last-child:nth-child(odd) {
+      grid-column: 1 / -1;
+      width: calc((100% - 0.7rem) / 2);
+      justify-self: center;
+    }
 
     .reel-fallback {
       position: absolute;
@@ -425,6 +433,9 @@
 
     @media (min-width: 540px) {
       .reels { gap: 1rem; grid-template-columns: repeat(2, 1fr); }
+      .reel-frame:last-child:nth-child(odd) {
+        width: calc((100% - 1rem) / 2);
+      }
       h1 { max-width: 14ch; }
     }
   </style>
@@ -494,6 +505,16 @@
               <span class="reel-ratio">9:16</span>
             </div>
             <video src="reel4.mp4" poster="berserker-gta-30s-poster.jpg" playsinline controls preload="metadata" title="Berserker Co – 30s Story Ad"></video>
+          </div>
+          <div class="reel-frame">
+            <div class="reel-fallback" aria-hidden="true">
+              <span class="play">
+                <svg width="10" height="12" viewBox="0 0 10 12" fill="currentColor" aria-hidden="true"><path d="M0 0v12l10-6z"/></svg>
+              </span>
+              <span class="reel-label">Reel 5</span>
+              <span class="reel-ratio">9:16</span>
+            </div>
+            <video src="reel5.mp4" poster="berserker-baldr-poster.jpg" playsinline controls preload="metadata" title="Berserker Co – &quot;Baldr&quot; Story Ad"></video>
           </div>
         </div>
       </section>
